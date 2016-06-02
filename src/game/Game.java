@@ -7,7 +7,8 @@ import javax.swing.*;
 import util.Reference;
 
 public class Game {     
-	static void createWindow() {        
+	static void createWindow() { 
+		//github test
 		//Create and set up the window.        
 		JFrame frame = new JFrame(Reference.GAME_NAME); 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);         
