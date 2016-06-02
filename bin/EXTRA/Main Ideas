@@ -1,0 +1,27 @@
+Basics:
+-Game Name: Life Without Whiteout
+-Goal: Last as long as possible
+-Art Style: Modern looking 2D (vibrant)
+-Camera: Non-moving. Top down (45 degree angle) Looking into the room.
+
+Player:
+-Choose their name
+-Choose their Company Name
+
+Functionality:
+-Game length is determined by how long the player can keep his reputation out of the red zone.
+-Reputation bar: 5%=Red 25%=Yellow 70%=Green
+-Once the players reputation hits red, the game is over and a score is given.
+-When the game starts, the players reputation is set to 15%.
+-Good decisions will grant the player with +1 to +3 rep.
+-Bad decisions will grant the player with -5 to -8 rep.
+
+How to build reputation:
+-Create fun custom video games (Players can choose the name, genre, and platform)
+	-Deadlines?????????
+-Stay active on social media, engage with fans.
+	-Reply to thoughts on ThoughtBook
+	-Hold contests
+-Answer phone calls and emails from fans. 
+	-Emails: People asking for partnerships/sponsors
+	-Phone Calls: People making suggestions/complaints
