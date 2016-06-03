@@ -2,18 +2,18 @@ package main;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import menu.TitleScreen;
+import frames.TitleScreen;
 import util.Reference;
 
-
 public class Main {
-
-    public static void main(String[] args) {
-    	Calendar cal = Calendar.getInstance();
-        SimpleDateFormat sdf = new SimpleDateFormat("hh:mm");
-        String printoutformat = "[" + sdf.format(cal.getTime()) + "] " + Reference.CONSOLE_PRINTOUT;
-        
-        
+	
+	static Calendar cal = Calendar.getInstance();
+	static SimpleDateFormat sdf = new SimpleDateFormat("hh:mm");
+	
+	public static String printoutformat = "[" + sdf.format(cal.getTime()) + "] " + Reference.CONSOLE_PRINTOUT;
+	
+	 
+	public static void main(String[] args) {
         System.out.println(printoutformat + "Loading Game...");
         TitleScreen.createTitleScreen();
     }
