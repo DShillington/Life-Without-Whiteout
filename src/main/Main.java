@@ -14,8 +14,8 @@ public class Main {
 	
 	 
 	public static void main(String[] args) {
-        System.out.println(printoutformat + "Loading Game...");
-        TitleScreen.createTitleScreen();
+        System.out.println(printoutformat + "Opening Main Menu...");
+        TitleScreen.createWindow();
     }
     
 }

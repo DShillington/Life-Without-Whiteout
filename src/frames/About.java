@@ -10,9 +10,9 @@ public class About {
 	public static void createWindow() { 
 		
 		//Create and set up the window.        
-		JFrame frame = new JFrame(Reference.GAME_NAME); 
+		JFrame frame = new JFrame(Reference.GAME_ABOUT); 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);         
-		JLabel textLabel = new JLabel("About",SwingConstants.CENTER);        
+		JLabel textLabel = new JLabel("Life Without Whiteout is made by papertazer. I may write more later. Idunno.",SwingConstants.CENTER);        
 		textLabel.setPreferredSize(new Dimension(1000, 600));        
 		frame.getContentPane().add(textLabel, BorderLayout.CENTER);         
 		//Display the window.        

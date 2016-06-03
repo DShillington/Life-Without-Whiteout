@@ -2,7 +2,6 @@ package frames;
 import java.awt.*;  
 
 import javax.swing.*;   
-// Create a simple GUI window 
 
 import util.Reference;
 
