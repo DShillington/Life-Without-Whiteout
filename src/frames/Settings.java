@@ -48,7 +48,6 @@ public class Settings {
 		sorry.setText("No settings yet, sorry!");
 		sorry.setForeground(Color.RED);
 		sorry.setFont(new Font("Serif", Font.PLAIN, 24));
-		sorry.setToolTipText("Papertazers first java game.");   
 		frame.add(sorry);
 
 		//Frame
@@ -66,7 +65,7 @@ public class Settings {
 	{
 	    public void actionPerformed(ActionEvent e)
 	    {
-	    	 TitleScreen.createWindow();
+	    	 TitleScreen.frame.setVisible(true);
 	    	 frame.dispose();
 	    	 System.out.println(Main.printoutformat + "Opening Main menu...");
 	    	 
