@@ -1,4 +1,4 @@
-package game;
+package frames;
 import java.awt.*;  
 
 import javax.swing.*;   
@@ -6,13 +6,13 @@ import javax.swing.*;
 
 import util.Reference;
 
-public class Game {     
-	static void createWindow() { 
-		//github test
+public class About {     
+	public static void createWindow() { 
+		
 		//Create and set up the window.        
 		JFrame frame = new JFrame(Reference.GAME_NAME); 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);         
-		JLabel textLabel = new JLabel("Game Shit Goes Here",SwingConstants.CENTER);        
+		JLabel textLabel = new JLabel("About",SwingConstants.CENTER);        
 		textLabel.setPreferredSize(new Dimension(1000, 600));        
 		frame.getContentPane().add(textLabel, BorderLayout.CENTER);         
 		//Display the window.        

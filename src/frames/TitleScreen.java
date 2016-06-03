@@ -1,21 +1,27 @@
-package menu;
+package frames;
 import java.awt.*;  
+import java.awt.event.ActionEvent;
 
 import javax.swing.*;   
 
+import main.Main;
+import buttons.ActionActionListener;
 import util.Reference;
 
 public class TitleScreen {     
+	
+	Image img = Toolkit.getDefaultToolkit().createImage("background.jpg");
+	
+	static JFrame frame = new JFrame(Reference.GAME_MENU);
+	
+	static JPanel panel = new JPanel();
+	
+	static JButton start = new JButton();
+	static JButton settings = new JButton();
+	static JButton about = new JButton();
+	static JButton exit = new JButton();
+	
 	public static void createTitleScreen() {        
-		
-		//Frame        
-		JFrame frame = new JFrame(Reference.GAME_MENU); 
-		JPanel panel = new JPanel();
-		//Buttons
-		JButton start = new JButton();
-		JButton settings = new JButton();
-		JButton about = new JButton();
-		JButton exit = new JButton();
 		
 		//Button Layout
 		start.setLayout(null);
@@ -62,13 +68,56 @@ public class TitleScreen {
 		title.setFont(new Font("Serif", Font.PLAIN, 34));
 		frame.add(title);
 		
-		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
 		frame.getContentPane().add("Center", panel);
 		panel.setBackground(new Color(0,0,0));
 		frame.setSize(600, 350);
 		frame.setVisible(true);   
-		}    
+		
+		start.addActionListener( new ActionActionListener()
+		
+		{
+		    public void actionPerformed(ActionEvent e)
+		    {
+		    	 Game.createWindow();
+		    	 frame.setVisible(false);
+		    	 System.out.println(Main.printoutformat + "Opening Game...");
+		    }
+		});
+		
+		settings.addActionListener( new ActionActionListener()
+		{
+		    public void actionPerformed(ActionEvent e)
+		    {
+		    	Settings.createWindow();
+		    	 frame.setVisible(false);
+		    	 System.out.println(Main.printoutformat + "Opening Settings...");
+		    }
+		});
+		
+		about.addActionListener( new ActionActionListener()
+		{
+		    public void actionPerformed(ActionEvent e)
+		    {
+		    	 About.createWindow();
+		    	 frame.setVisible(false);
+		    	 System.out.println(Main.printoutformat + "Opening About...");
+		    }
+		});
+		    
+		exit.addActionListener( new ActionActionListener()
+		{
+			public void actionPerformed(ActionEvent e)
+			{
+				frame.setVisible(false);
+				System.out.println(Main.printoutformat + "Closing Game...");
+			}
+		});
+	}   
 	
-
+	public void paint(Graphics graphics)
+    {
+        // Draws the img to the BackgroundPanel.
+        graphics.drawImage(img, 0, 0, null);
+    }
 }
